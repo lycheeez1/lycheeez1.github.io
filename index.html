@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>KB 라스쿨(La School) - Login</title>
+  <meta charset="UTF-8">
+  <meta name="dev-by" content="BJH">
+  <meta name="description" content="login to check point score">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    body {
+      text-align: center;
+      font-family: "나눔스퀘어_ac", "나눔고딕";
+    }
+    input[type=text], input[type=password] {
+      display: inline-block;
+      width: 320px;
+      padding: 10px 20px;
+      margin: 5px 0; /*
+      box-sizing: border-box; */
+      font-family: "나눔스퀘어_ac", "나눔고딕";
+    }
+    button {
+      width: 360px;
+      margin-top: 10px;
+      padding: 15px 10px;
+      border: none;
+      color: white;
+      background-color: #565bfc;
+      cursor: pointer;
+      font-family: "나눔스퀘어_ac","나눔바른고딕";
+    }
+    button:hover {
+      opacity: 0.5;
+    }
+    #img {
+      margin-top: 60px;
+    }
+    .container {
+      padding: 50px 100px 220px 100px;
+    }
+    footer {
+      font-size: 10px;
+      font-family: "나눔바른고딕";
+    }
+  </style>
+</head>
+<body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="/__/firebase/8.2.4/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+  https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+
+  <!-- Initialize Firebase -->
+  <script src="/__/firebase/init.js"></script>
+  <div id="img">
+    <img src="laschool.png">
+  </div>
+  <form method="POST" action="login.php">
+    <div class="container">
+      <input type="text" placeholder="Enter ID" name="id" required> <br/>
+      <input type="password" placeholder="Enter Password" name="pw" required> <br/>
+      <button type="submit">로그인</button> <br/>
+    </div>
+  </form>
+  <footer>
+    Copyright © livewith. All rights reserved.
+  <footer>
+</body>
+</html>
