@@ -3,7 +3,7 @@
       session_start();
   }
 
-  $host = "https://kb-laschool.web.app";
+  $host = "localhost";
   $user = "root";
   $pwd = "lycheeez1";
   $dbName = "kb";
